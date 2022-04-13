@@ -9,6 +9,27 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
+% Language packages
+\usepackage[ngerman]{babel} 	        % german language
+\usepackage[german=quotes]{csquotes} 	% correct quoting using \enquote{}
+
 % Font like arial
 \usepackage[scaled=0.8]{helvet}
 \renewcommand{\familydefault}{\sfdefault}
+
+% For Tables
+\usepackage{tabularx}
+
+% For algorithms
+\usepackage{algorithm}
+\renewcommand{\listalgorithmname}{Algorithmenverzeichnis}
+\floatname{algorithm}{Algorithmus}
+
+% For listings
+\usepackage{listings}	
+\renewcommand{\lstlistingname}{Quelltext} 
+\renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
+\lstset{numbers=left,
+	numberstyle=\tiny,
+	captionpos=b,
+	basicstyle=\ttfamily\small}
