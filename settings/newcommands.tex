@@ -28,10 +28,15 @@
 \newcommand{\initializeMain}{
 	\clearpage
 	\ihead{\chaptername~\thechapter} % New header definition
+	\newcounter{savepage}
+	\setcounter{savepage}{\arabic{page}}
 	\pagenumbering{arabic}           % arabic page numbering
 }
 
 \newcommand{\initializeAppendix}{
+	\clearpage
+	\pagenumbering{roman}
+	\setcounter{page}{\thesavepage}
 	\appendix
     \ihead{}
     \addtocontents{toc}{\protect\contentsline{chapter}{Anhang \protect\numberline{}}{}{}}
