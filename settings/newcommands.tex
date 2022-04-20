@@ -34,9 +34,10 @@
 	% Set header
 	\renewcommand*{\chaptermarkformat}{}
 	\automark{chapter}
-	\ohead{\headmark}
-	\ihead{\chaptername~\thechapter}
+	\ohead{\thechapter~\headmark}
+
 	\chead[]{}
+	
 	% Set arabic page numbering
 	\newcounter{savepage}
 	\setcounter{savepage}{\arabic{page}}
