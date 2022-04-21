@@ -22,7 +22,7 @@
 \newcommand{\initializePreambel}{
 	\clearpage
 	% Set footer
-	\cfoot[]{}																			% Fußzeile Seitennummer rechts unten, Abschalten bei zweisetigem Druck
+	\cfoot[]{}
 	\ofoot[\pagemark]{\pagemark}
 	% Set roman page numbering
 	\pagenumbering{roman} 
@@ -35,9 +35,7 @@
 	\renewcommand*{\chaptermarkformat}{}
 	\automark{chapter}
 	\ohead{\thechapter~\headmark}
-
 	\chead[]{}
-	
 	% Set arabic page numbering
 	\newcounter{savepage}
 	\setcounter{savepage}{\arabic{page}}
