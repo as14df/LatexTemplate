@@ -1,0 +1,56 @@
+% For links 
+% Hide red highlights in links
+\usepackage[hidelinks]{hyperref} 
+
+% For images with different formats
+\usepackage{graphicx}   
+
+% Font like Arial
+\usepackage[scaled=0.9]{helvet}
+
+% Font and character packs
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Language packages
+\usepackage[ngerman]{babel} 	        % german language
+\usepackage[german=quotes]{csquotes} 	% correct quoting using \enquote{}
+
+% For Tables
+\usepackage{tabularx}
+
+% Fixes warnings from algorithm & listings package
+\usepackage{scrhack}
+
+% For algorithms
+\usepackage{algorithm}
+\renewcommand{\listalgorithmname}{Algorithmenverzeichnis}
+\floatname{algorithm}{Algorithmus}
+
+% For listings
+\usepackage{listings}	
+\renewcommand{\lstlistingname}{Quelltext} 
+\renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
+\lstset{numbers=left,
+	numberstyle=\tiny,
+	captionpos=b,
+	basicstyle=\ttfamily\small}
+
+% For acronyms
+\usepackage{acronym}
+
+% For dummy text
+\usepackage{lipsum}
+
+% For header & footer
+\usepackage{scrlayer-scrpage}
+
+% For bibliography
+\usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 
+\setlength{\bibparsep}{\parskip}		  
+\addbibresource{../bibliography.bib}
+\DefineBibliographyStrings{ngerman}{andothers = {{et\,al\adddot}},}
+
+% For index generation
+\usepackage{makeidx}
+\makeindex
