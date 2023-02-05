@@ -1,26 +1,30 @@
-\input{settings/settings.tex}
-\input{settings/packages.tex}
-\input{settings/newcommands.tex}
-\input{settings/config.tex}
+\documentclass[fontsize=12pt,BCOR=5mm,DIV=12,parskip=half,listof=totoc,
+               paper=a4,toc=bibliography,numbers=noenddot]{scrreprt}
+
+\input{settings/packages}
+\input{settings/newcommands}
+\input{settings/config}
+\input{settings/colors}
+\input{settings/codestyles}
 
 \begin{document}
 
 \initializeTitle
-\input{content/preambel/title.tex}
+\input{content/preambel/title}
 
 \initializePreambel
-\input{content/preambel/affidavit.tex}
-\input{content/preambel/lock.tex}
-\input{content/preambel/acknowledgement.tex}
-\input{content/preambel/listings.tex}
-\input{content/preambel/acros.tex} 
-\input{content/preambel/abstract.tex}
+\input{content/preambel/affidavit}
+\input{content/preambel/lock}
+\input{content/preambel/acknowledgement}
+\input{content/preambel/listings}
+\input{content/preambel/acros}
+\input{content/preambel/abstract}
 
 \initializeMain
-\input{content/main/intro.tex}
+\input{content/main/intro}
 
 \initializeAppendix
-\input{content/appendix/appendix.tex}
+\input{content/appendix/appendix}
 
 \initializeBibliography
 
