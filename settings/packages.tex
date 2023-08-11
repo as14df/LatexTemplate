@@ -57,3 +57,24 @@
 % For index generation
 \usepackage{makeidx}
 \makeindex
+
+% For page margins
+\usepackage[%
+  paper=a4paper,
+  left=25mm,
+  right=25mm,
+  top=25mm,
+  bottom=15mm,
+  includefoot,
+  foot=10mm
+]{geometry}
+
+% For font like times new roman
+\usepackage[scaled=1.078402]{newtxtext,newtxmath}
+
+% For line spacing 1.5
+\linespread{1.5}
+
+% Decrease space between image and caption
+\setlength{\abovecaptionskip}{-10pt}
+\setlength{\belowcaptionskip}{-20pt}
